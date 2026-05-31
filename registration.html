@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="icon" href="img/nse.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    
+<section class="registration-page">
+
+    <div id="backToHomepage"><i class="fa-solid fa-circle-arrow-left" ></i></div>
+
+    <div class="registration-header">
+
+        <h1>Register For Engineering Week 2026</h1>
+
+        <p>
+            Complete the registration form below to participate
+            in the Nigerian Society of Engineers Engineering Week
+            2026.
+        </p>
+
+    </div>
+
+    <form class="registration-form" id="registrationForm">
+
+        <div class="form-section">
+
+            <h2>Personal Information</h2>
+
+            <div class="form-grid">
+
+                <input required="required" type="text" name="firstname" id="firstname" placeholder="First Name">
+
+                <input required="required" type="text" name="lastname" id="lastname" placeholder="Last Name">
+
+                <input required="required" type="email" name="email" id="email" placeholder="Email Address">
+
+                <input required="required" type="tel" name="phone" id="phone" placeholder="Phone Number">
+
+                <select required="required">
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <input required="required" type="text" name="profession" placeholder="Profession">
+
+            </div>
+
+        </div>
+
+        <div class="form-section">
+
+            <h2>Registration Category</h2>
+
+            <div class="category-grid">
+
+                <label>
+                    <input required="required" type="radio" name="category" value="Guest">
+                    Guest
+                </label>
+
+                <label>
+                    <input required="required" type="radio" name="category" value="Exhibitor">
+                    Exhibitor
+                </label>
+
+                <label>
+                    <input required="required" type="radio" name="category" value="Sponsor">
+                    Sponsor
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="form-section">
+
+            <h2>Organization Information</h2>
+
+            <div class="form-grid">
+
+                <input required="required" type="text" name="company" placeholder="Company / Institution">
+
+                <input required="required" type="text" name="position" placeholder="Position / Designation">
+
+            </div>
+
+        </div>
+
+        <div class="form-section">
+
+            <h2>Additional Information</h2>
+
+            <textarea
+            placeholder="Tell us about your expectations for Engineering Week 2026"></textarea>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+            COMPLETE REGISTRATION
+        </button>
+
+    </form>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
